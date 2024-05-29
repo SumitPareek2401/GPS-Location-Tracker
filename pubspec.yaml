@@ -1,0 +1,181 @@
+name: gps_location
+description: A new Flutter project.
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+# In Windows, build-name is used as the major, minor, and patch parts
+# of the product and file versions while build-number is used as the build suffix.
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.1.2 <4.0.0'
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.2
+  google_maps_flutter: ^2.5.0
+  location: ^5.0.3
+  geolocator: ^10.1.0
+  # geocoder: ^0.2.1
+  geocoding: ^2.1.1
+  fluttertoast: ^8.2.2
+  google_fonts: ^4.0.4
+  permission_handler: ^11.0.1
+  app_settings: ^5.1.1
+  syncfusion_flutter_sliders: ^23.1.41
+  android_intent_plus: ^4.0.3
+  flutter_sharing_intent: ^1.1.0
+  file_picker: ^6.0.0
+  flutter_native_splash: ^2.3.5
+  flutter_gif: ^0.0.4
+  toggle_switch: ^2.1.0
+  introduction_screen: ^3.1.12
+  shared_preferences: ^2.2.2
+  flutter_switch: ^0.3.2
+  # google_maps_place_picker_mb: ^3.1.2
+  flutter_google_places_hoc081098: ^1.2.0
+  maps_launcher: ^2.2.0
+  sqflite: ^2.3.0
+  font_awesome_flutter: ^9.2.0
+  url_launcher: ^6.2.1
+  string_stats: ^0.1.0
+  flutter_tts: ^3.8.3
+  speech_to_text: ^6.3.0
+  scroll_to_index: ^3.0.1
+  modal_bottom_sheet: ^2.1.2
+  share_plus: ^7.2.1
+  provider: ^6.0.5
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_launcher_icons: "^0.13.1"
+
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices. The lint set provided by the package is
+  # activated in the `analysis_options.yaml` file located at the root of your
+  # package. See that file for information about deactivating specific lint
+  # rules and activating additional ones.
+  flutter_lints: ^2.0.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/images/splash3.png"
+  min_sdk_android: 22 # android min sdk min:16, default 21
+
+# The following section is specific to Flutter packages.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+      - assets/images/
+      - assets/images/marker.png
+      - assets/images/splash.gif
+      - assets/images/introMap.jpeg
+      - assets/images/location.png
+      - assets/images/intro1.png
+      - assets/images/intro2.png
+      - assets/images/splash.png
+      - assets/images/splash2.jpg
+      - assets/images/splash3.png
+      - assets/images/realtime.jpg
+      - assets/images/nearby.png
+      - assets/images/sharelocation.png
+      - assets/images/spa.png
+      - assets/images/coffee.png
+      - assets/images/restaurant.png
+      - assets/images/bar.png
+      - assets/images/atm.png
+      - assets/images/default.png
+      - assets/images/satellite.png
+      - assets/images/terrain.png
+      - assets/images/favorite.png
+      - assets/images/nearby/art.png
+      - assets/images/nearby/delivery.png
+      - assets/images/nearby/films.png
+      - assets/images/nearby/library.png
+      - assets/images/nearby/livemusic.jpeg
+      - assets/images/nearby/museums.jpeg
+      - assets/images/nearby/nightlife.png
+      - assets/images/nearby/parks.png
+      - assets/images/nearby/takeaway.png
+      - assets/images/nearby/groceries.png
+      - assets/images/nearby/shopping.png
+      - assets/images/nearby/beauty.png
+      - assets/images/nearby/cardealer.png
+      - assets/images/nearby/clothing.jpeg
+      - assets/images/nearby/electronics.png
+      - assets/images/nearby/sporting.jpeg
+      - assets/images/nearby/home&garden.png
+      - assets/images/nearby/food&shelters.png
+      - assets/images/nearby/nightshelter.png
+      - assets/images/nearby/hotel.png
+      - assets/images/nearby/rent.png
+      - assets/images/nearby/repair.png
+      - assets/images/nearby/wash.png
+      - assets/images/nearby/drycleaning.png
+      - assets/images/nearby/petrol.png
+      - assets/images/nearby/hospital.jpeg
+      - assets/images/nearby/post.png
+      - assets/images/nearby/parking.jpeg
+      - assets/images/nearby/chemist.png
+      - assets/images/nearby/charging.png
+      - assets/images/nearby/gym.png
+      - assets/images/speech/page.png
+  #   - images/a_dot_ham.jpeg
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
